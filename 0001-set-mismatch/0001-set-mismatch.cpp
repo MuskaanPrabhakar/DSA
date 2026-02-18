@@ -2,22 +2,24 @@ class Solution {
 public:
     vector<int> findErrorNums(vector<int>& nums) {
         int n = nums.size();
-        vector<int> freq(n + 1, 0);
-        vector<int> result(2);
+        vector<int> ans(2);
 
-        // Count frequency
-        for (int x : nums) {
-            freq[x]++;
+        sort(nums.begin(), nums.end());
+
+        for (int i = 0; i < n - 1; i++) {
+            if (nums[i] == nums[i + 1]) {
+                ans[0] = nums[i];   // duplicate
+            }
         }
 
-        // Find duplicate and missing
-        for (int i = 1; i <= n; i++) {
-            if (freq[i] == 2)
-                result[0] = i;   // duplicate
-            else if (freq[i] == 0)
-                result[1] = i;   // missing
+        // Find missing number
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != i + 1) {
+                ans[1] = i + 1;
+                break;
+            }
         }
 
-        return result;
+        return ans;
     }
 };
