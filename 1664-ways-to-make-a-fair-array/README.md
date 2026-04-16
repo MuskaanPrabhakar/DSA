@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/ways-to-make-a-fair-array/">1664. Ways to Make a Fair Array</a></h2><h3>Medium</h3><hr><p>You are given an integer array&nbsp;<code>nums</code>. You can choose <strong>exactly one</strong> index (<strong>0-indexed</strong>) and remove the element. Notice that the index of the elements may change after the removal.</p>
+<h2><a href="https://leetcode.com/problems/ways-to-make-a-fair-array">1664. Ways to Make a Fair Array</a></h2><h3>Medium</h3><hr><p>You are given an integer array&nbsp;<code>nums</code>. You can choose <strong>exactly one</strong> index (<strong>0-indexed</strong>) and remove the element. Notice that the index of the elements may change after the removal.</p>
 
 <p>For example, if <code>nums = [6,1,7,4,1]</code>:</p>
 
