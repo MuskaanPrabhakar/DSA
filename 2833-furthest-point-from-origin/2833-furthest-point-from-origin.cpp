@@ -6,16 +6,11 @@ public:
             if(moves[i]=='L'){
                 pos--;
             }
-            else if(moves[i]=='_'){
-                mx++;
-            }
             else if(moves[i]=='R'){
                 pos++;
             }
+            else mx++;
         }
-        if(pos<=0) pos-=mx;
-        else pos+=mx;
-        pos=abs(pos);
-    return pos;
+        return abs(pos) + mx;;
     }
 };
