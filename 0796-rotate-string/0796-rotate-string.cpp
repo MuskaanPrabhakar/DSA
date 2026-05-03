@@ -11,3 +11,16 @@ public:
         return false;
     }
 };
+/*class Solution {
+public:
+    bool rotateString(string s, string goal) {
+        // Step 1: Length check
+        if (s.size() != goal.size()) return false;
+
+        // Step 2: Concatenate
+        string doubled = s + s;
+
+        // Step 3: Check substring
+        return doubled.find(goal) != string::npos;
+    }
+};*/
