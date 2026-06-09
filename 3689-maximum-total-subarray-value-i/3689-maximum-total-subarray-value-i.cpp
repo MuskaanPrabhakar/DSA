@@ -11,3 +11,11 @@ public:
         return maxi*=k;
     }
 };
+/*class Solution {
+public:
+    long long maxTotalValue(std::vector<int>& nums, int k) {
+        const int64_t min_num = *std::min_element(nums.begin(), nums.end());
+        const int64_t max_num = *std::max_element(nums.begin(), nums.end());
+        return (max_num - min_num) * k; 
+    }
+};*/
