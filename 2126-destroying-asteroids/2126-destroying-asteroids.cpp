@@ -30,7 +30,8 @@ public:
         return true;
     }
 };
-/*class Solution {
+/*BETTER OPTIMIZED SOLUTION
+class Solution {
 public:
     bool asteroidsDestroyed(int mass, vector<int>& asteroids) {
         sort(asteroids.begin(), asteroids.end());
