@@ -4,9 +4,7 @@ public:
         int n = arr.size();
         vector<bool> visited(n, false);
         stack<int> st;
-        
         st.push(start);
-
         while (!st.empty()) {
             int i = st.top();
             st.pop();
