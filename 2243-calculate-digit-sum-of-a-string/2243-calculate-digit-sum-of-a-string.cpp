@@ -11,7 +11,6 @@ public:
             }
             ans+=to_string(sum);
         }
-        ans= digitSum(ans,k);
-        return ans;
+        return digitSum(ans,k);
    }
 };
