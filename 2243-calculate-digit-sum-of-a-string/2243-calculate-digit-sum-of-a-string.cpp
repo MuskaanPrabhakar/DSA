@@ -1,8 +1,8 @@
 class Solution {
 public:
     string digitSum(string s, int k) {
-        string ans="";
         if(s.size()<=k) return s;
+        string ans="";
         for(int i=0;i<s.size();i+=k){
             int sum=0; int j=0;
             while(j<k && i+j<s.size()){
