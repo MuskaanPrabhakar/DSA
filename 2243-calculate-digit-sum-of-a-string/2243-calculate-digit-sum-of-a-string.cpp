@@ -11,7 +11,7 @@ public:
             }
             ans+=to_string(sum);
         }
-        ans= digitSum(ans,k);
+        if(ans.size()>k) ans= digitSum(ans,k);
         return ans;
    }
 };
